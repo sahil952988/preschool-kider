@@ -1,5 +1,6 @@
 import React, { useRef } from 'react'
 import "../style/Header.css"
+import { Link } from 'react-router-dom';
 const Header = () => {
   const menuRef = useRef(null);
 
@@ -13,11 +14,11 @@ const Header = () => {
 
         <div className="Nav md:flex md:flex-col md:justify-center md:relative absolute md:bg-transparent bg-white  md:w-[450px] w-[100%] md:mt-0 mt-[70px] " onClick={toggleMenu} ref={menuRef}>
           <div className="md:flex md:space-x-7 md:space-y-0 space-y-3 py-5 pl-5  font-semibold cursor-pointer ">
-            <p className='hover:text-[#FE5D37]'>Home</p>
-            <p className='hover:text-[#FE5D37]'>About Us</p>
-            <p className='hover:text-[#FE5D37]'>Classes</p>
+            <Link to="/Home"> <p className='hover:text-[#FE5D37]'>Home</p></Link>
+            <Link to="/AboutUs"><p className='hover:text-[#FE5D37]'>About Us</p></Link>
+            <Link to="/Classes"><p className='hover:text-[#FE5D37]'>Classes</p></Link>
             <p className='hover:text-[#FE5D37]'>Pages</p>
-            <p className='hover:text-[#FE5D37]'>Contact Us</p>
+            <Link to="/ContactUs"><p className='hover:text-[#FE5D37]'>Contact Us</p></Link>
           </div>
         </div>
 
@@ -30,7 +31,7 @@ const Header = () => {
         <div className="left hidden md:block py-3 mt-4 mr-12">
           <button className='bg-[#FE5D37] text-white font-bold rounded-full px-4 py-2'>Join Us <i class="fa-solid fa-arrow-right"></i></button>
         </div>
-      </div>
+      </div >
     </>
   )
 }
