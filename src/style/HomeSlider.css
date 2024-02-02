@@ -1,0 +1,31 @@
+.bgheader_top {
+  position: absolute;
+  margin-right: 105;
+  height: 10px;
+  width: 86.4%;
+  margin-left: 105px;
+  background: url(../Assets//bg-header-top.png) center center repeat-x;
+  z-index: 1;
+}
+
+.bgheader_bottom {
+  position: absolute;
+  margin-right: 105;
+  margin-top: -15px;
+  height: 10px;
+  width: 86.4%;
+  margin-left: 105px;
+  background: url(../Assets//bg-header-bottom.png) center center repeat-x;
+  z-index: 1;
+}
+
+
+.slider-01 {
+  background: url(../Assets/Homecarousel-1.jpg);
+  width: 86.4%;
+}
+
+.slider-02 {
+  background: url(../Assets/Homecarousel-2.jpg);
+  width: 86.4%;
+}
