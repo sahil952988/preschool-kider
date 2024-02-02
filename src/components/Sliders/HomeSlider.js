@@ -48,7 +48,7 @@ const HomeSlider = () => {
         </div>
       </Slider>
 
-      <div className="header_bottom absolute h-[19px] xl:w-[1326px] w-full xl:ml-[105px] z-10 mt-[-23px] ">
+      <div className="header_bottom absolute h-[19px] xl:w-[1326px] w-full xl:ml-[105px] z-10 mt-[-18px] ">
       </div>
     </>
   )
