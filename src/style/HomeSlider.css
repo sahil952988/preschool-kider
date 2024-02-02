@@ -1,12 +1,8 @@
 .bgheader_top {
-  position: absolute;
-  margin-right: 105;
-  height: 10px;
-  width: 86.4%;
-  margin-left: 105px;
   background: url(../Assets//bg-header-top.png) center center repeat-x;
-  z-index: 1;
+
 }
+
 
 .bgheader_bottom {
   position: absolute;
@@ -28,4 +24,15 @@
 .slider-02 {
   background: url(../Assets/Homecarousel-2.jpg);
   width: 86.4%;
+}
+
+.custom-prevArrow,
+.custom-nextArrow {
+  position: relative;
+  z-index: 99999;
+  top: -10px;
+}
+
+.slick-arrow>div {
+  color: green;
 }

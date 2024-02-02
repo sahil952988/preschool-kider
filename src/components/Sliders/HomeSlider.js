@@ -1,29 +1,38 @@
 import React from 'react'
 import Slider from 'react-slick';
 import "../../style/HomeSlider.css"
-import bgheader_top from "../../Assets/bg-header-top.png"
+
+
 
 const HomeSlider = () => {
   var settings = {
-    dots: true,
+    dots: false,
     infinite: true,
-    speed: 500,
+    speed: 1500,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    infinite: true,
     slidesToShow: 1,
-    slidesToScroll: 1
+    slidesToScroll: 1,
+    pauseOnHover: false,
+
   };
   return (
     <>
-      <div className="bgheader_top mr-[105px] ">
-      </div>
+      <div className='lg:ml-[105px] lg:mr-[105px]'>
+        <div className="bgheader_top lg:w-[1320px] w-812px h-[10px] z-10 absolute ">
 
-      <Slider {...settings} className='mr-[1.5px] ml-[105px] w-[86.4%]'>
-        <div className="slider-01 h-[742.133px] ">
         </div>
 
-        <div className="slider-02 h-[742.133px] ">
-        </div>
-      </Slider>
-      <div className="bgheader_bottom mr-[105px] ">
+        <Slider {...settings} className='lg:w-full w-[812px]'>
+          <div className="slider-01 lg:h-[742.133px] h-[456.533px] ">
+          </div>
+
+          <div className="slider-02 lg:h-[742.133px] h-[456.533px] ">
+          </div>
+        </Slider>
+        {/* <div className="bgheader_bottom lg:mr-[105px] ">
+        </div> */}
       </div>
     </>
   )
