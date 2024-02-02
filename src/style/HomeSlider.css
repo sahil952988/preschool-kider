@@ -1,12 +1,12 @@
 .slider_01 {
-  background: url(../Assets/Homecarousel-1.jpg);
+  background: linear-gradient(rgba(19, 19, 20, 0.2), rgba(21, 21, 21, 0.2)), url(../Assets/Homecarousel-1.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .slider_02 {
-  background: url(../Assets/Homecarousel-2.jpg);
+  background: linear-gradient(rgba(19, 19, 20, 0.2), rgba(21, 21, 21, 0.2)), url(../Assets/Homecarousel-2.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -18,4 +18,9 @@
 
 .header_bottom {
   background: url(../Assets/bg-header-bottom.png) center center repeat-x;
+}
+
+.text-1 {
+  font-family: 'Lobster Two', sans-serif;
+  color: white;
 }
