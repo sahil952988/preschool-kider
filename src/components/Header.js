@@ -13,12 +13,13 @@ const Header = () => {
         </div>
 
         <div className="Nav lg:flex lg:flex-col lg:justify-center lg:relative absolute lg:bg-transparent bg-white  lg:w-[450px] w-[100%] lg:mt-0 mt-[70px] " onClick={toggleMenu} ref={menuRef}>
-          <div className="lg:flex md:space-x-7 md:space-y-0 space-y-3 py-5 pl-5  font-semibold cursor-pointer ">
+          <div className="lg:flex space-x-7 py-5 pl-5  font-semibold cursor-pointer ">
             <Link to="/Home"> <p className='hover:text-[#FE5D37]'>Home</p></Link>
             <Link to="/AboutUs"><p className='hover:text-[#FE5D37]'>About Us</p></Link>
             <Link to="/Classes"><p className='hover:text-[#FE5D37]'>Classes</p></Link>
-            <p className='hover:text-[#FE5D37]'>Pages</p>
+            <Link><p className='hover:text-[#FE5D37]'>Pages</p></Link>
             <Link to="/ContactUs"><p className='hover:text-[#FE5D37]'>Contact Us</p></Link>
+
           </div>
         </div>
 
