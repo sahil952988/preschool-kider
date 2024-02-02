@@ -1,38 +1,36 @@
 import React from 'react'
-import Slider from 'react-slick';
 import "../../style/HomeSlider.css"
-
-
+import Slider from 'react-slick'
 
 const HomeSlider = () => {
   var settings = {
     dots: false,
     infinite: true,
     speed: 1500,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 3000,
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
     pauseOnHover: false,
+    arrows: false,
 
   };
   return (
     <>
-      <div className='lg:ml-[105px] lg:mr-[105px]'>
-        <div className="bgheader_top lg:w-[1320px] w-812px h-[10px] z-10 absolute ">
+      <div className="header_top absolute h-[10px] xl:w-[1326px] w-full xl:ml-[105px] z-10 ">
+      </div>
 
+      <Slider {...settings} className='xl:mr-[105px] xl:ml-[105px]'>
+
+        <div className="slider_01 w-fit xl:h-[742.33px] h-[300px]">
         </div>
 
-        <Slider {...settings} className='lg:w-full w-[812px]'>
-          <div className="slider-01 lg:h-[742.133px] h-[456.533px] ">
-          </div>
+        <div className="slider_02 w-fit xl:h-[742.33px] h-[300px]">
+        </div>
+      </Slider>
 
-          <div className="slider-02 lg:h-[742.133px] h-[456.533px] ">
-          </div>
-        </Slider>
-        {/* <div className="bgheader_bottom lg:mr-[105px] ">
-        </div> */}
+      <div className="header_bottom absolute h-[19px] xl:w-[1326px] w-full xl:ml-[105px] z-10 mt-[-23px] ">
       </div>
     </>
   )

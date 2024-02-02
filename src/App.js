@@ -1,9 +1,12 @@
 import Layout from "./Layout/Layout"
+import Helmet from "./components/Helmet/Helmet"
 
 const App = () => {
   return (
     <>
-      <Layout />
+      <Helmet title='Pre School Website Templates'>
+        <Layout />
+      </Helmet>
     </>
   )
 }

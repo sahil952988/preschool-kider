@@ -1,38 +1,21 @@
-.bgheader_top {
-  background: url(../Assets//bg-header-top.png) center center repeat-x;
-
-}
-
-
-.bgheader_bottom {
-  position: absolute;
-  margin-right: 105;
-  margin-top: -15px;
-  height: 10px;
-  width: 86.4%;
-  margin-left: 105px;
-  background: url(../Assets//bg-header-bottom.png) center center repeat-x;
-  z-index: 1;
-}
-
-
-.slider-01 {
+.slider_01 {
   background: url(../Assets/Homecarousel-1.jpg);
-  width: 86.4%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.slider-02 {
+.slider_02 {
   background: url(../Assets/Homecarousel-2.jpg);
-  width: 86.4%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.custom-prevArrow,
-.custom-nextArrow {
-  position: relative;
-  z-index: 99999;
-  top: -10px;
+.header_top {
+  background: url(../Assets/bg-header-top.png) center center repeat-x;
 }
 
-.slick-arrow>div {
-  color: green;
+.header_bottom {
+  background: url(../Assets/bg-header-bottom.png) center center repeat-x;
 }
