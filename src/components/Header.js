@@ -12,16 +12,16 @@ const Header = () => {
           <p className="logo text-[#FE5D37] lg:text-[40px] text-[25px] font-bold space-x-2"><i class="fa-solid fa-book-open-reader"></i>  Kider</p>
         </div>
 
-        <div className="Nav lg:flex lg:flex-col lg:justify-center lg:relative absolute lg:bg-transparent bg-white  lg:w-[450px] w-[100%] lg:mt-0 mt-[70px] " onClick={toggleMenu} ref={menuRef}>
-          <div className="lg:flex space-x-7 py-5 pl-5  font-semibold cursor-pointer ">
+        <div className="hidden lg:block">
+          <div className=" flex space-x-7 font-semibold cursor-pointer mt-8">
             <Link to="/Home"> <p className='hover:text-[#FE5D37]'>Home</p></Link>
             <Link to="/AboutUs"><p className='hover:text-[#FE5D37]'>About Us</p></Link>
             <Link to="/Classes"><p className='hover:text-[#FE5D37]'>Classes</p></Link>
             <Link><p className='hover:text-[#FE5D37]'>Pages</p></Link>
             <Link to="/ContactUs"><p className='hover:text-[#FE5D37]'>Contact Us</p></Link>
-
           </div>
         </div>
+
 
 
         <div className="menu lg:hidden border-[2px] border-gray-200 hover:border-[5px] hover:border-gray-500  rounded-[15px] px-3  mr-5 mb-3 mt-2 " onClick={toggleMenu}>
@@ -33,6 +33,16 @@ const Header = () => {
           <button className='bg-[#FE5D37] text-white font-bold rounded-full px-4 py-2'>Join Us <i class="fa-solid fa-arrow-right"></i></button>
         </div>
       </div >
+
+      <div className="Nav lg:hidden" onClick={toggleMenu} ref={menuRef}>
+        <div className=" flex flex-col space-y-7 bg-white font-semibold cursor-pointer pl-5 py-10 ">
+          <Link to="/Home"> <p className='hover:text-[#FE5D37]'>Home</p></Link>
+          <Link to="/AboutUs"><p className='hover:text-[#FE5D37]'>About Us</p></Link>
+          <Link to="/Classes"><p className='hover:text-[#FE5D37]'>Classes</p></Link>
+          <Link><p className='hover:text-[#FE5D37]'>Pages</p></Link>
+          <Link to="/ContactUs"><p className='hover:text-[#FE5D37]'>Contact Us</p></Link>
+        </div>
+      </div>
     </>
   )
 }
