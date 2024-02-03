@@ -28,6 +28,7 @@
 .parent2:hover .child2 {
   background-color: rgb(25, 135, 84);
   color: white;
+  transition: .5s;
 }
 
 .parent2:hover .textbg2 {
@@ -43,6 +44,7 @@
 .parent3:hover .child3 {
   background-color: #ffc107;
   color: white;
+  transition: .5s;
 }
 
 .parent3:hover .textbg3 {
@@ -58,6 +60,7 @@
 .parent4:hover .child4 {
   background-color: #0dcaf0;
   color: white;
+  transition: .5s;
 }
 
 .parent4:hover .textbg4 {

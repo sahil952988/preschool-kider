@@ -47,12 +47,12 @@ const SchoolFacilities = () => {
           <div className="parent2">
 
             <div className="ear_head flex justify-center ">
-              <div className="earx-12 flex absolute space-x-12">
-                <div className="ear2 child2 w-[15px] h-[30px] bg-[#FFF5F3] rounded-[50%]"></div>
+              <div className="earx-12 flex absolute space-x-12 ">
+                <div className="ear2  child2 w-[15px] h-[30px] bg-[#FFF5F3] rounded-[50%]"></div>
                 <div className="ear2 child2 w-[15px] h-[30px] bg-[#FFF5F3] rounded-[50%]"></div>
               </div>
 
-              <div className="absolute mt-[10px] ">
+              <div className="absolute mt-[10px]  ">
                 <p className='child2 text-[48px] text-[#198754]  rounded-full w-[100px] h-[100px] text-center pt-3 '><i class="fa-solid fa-futbol"></i></p>
               </div>
             </div>

@@ -1,5 +1,6 @@
 
 
+import LearnMore from "../components/UI/LearnMore"
 import SchoolFacilities from "../components/UI/SchoolFacilities"
 import HomeSlider from "../components/UI/Sliders/HomeSlider"
 
@@ -8,6 +9,7 @@ const Home = () => {
     <>
       <HomeSlider />
       <SchoolFacilities />
+      <LearnMore />
     </>
   )
 }
