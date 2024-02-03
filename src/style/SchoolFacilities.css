@@ -1,8 +1,68 @@
-.school_Facilites {
+.school_Facilites,
+.cursive_font {
   font-family: 'Lobster Two', sans-serif;
   ;
 }
 
-.content {
-  clip-path: ellipse(50% 100% at 51% 50%);
+
+
+
+/* --------- HOVER EFFECT ----- */
+
+.parent1:hover .child1 {
+  background-color: #FE5D37;
+  color: white;
+}
+
+.parent1:hover .textbg1 {
+  color: white;
+}
+
+.child1 {
+  background-color: #FFF5F3;
+}
+
+/* ====== second ======== */
+
+.parent2:hover .child2 {
+  background-color: rgb(25, 135, 84);
+  color: white;
+}
+
+.parent2:hover .textbg2 {
+  color: white;
+}
+
+.child2 {
+  background-color: rgba(0, 128, 0, 0.1);
+}
+
+/* ============ third =========== */
+
+.parent3:hover .child3 {
+  background-color: #ffc107;
+  color: white;
+}
+
+.parent3:hover .textbg3 {
+  color: white;
+}
+
+.child3 {
+  background-color: rgba(255, 193, 0, 0.1);
+}
+
+/* =========fourth ========= */
+
+.parent4:hover .child4 {
+  background-color: #0dcaf0;
+  color: white;
+}
+
+.parent4:hover .textbg4 {
+  color: white;
+}
+
+.child4 {
+  background-color: rgba(13, 202, 240, 0.1);
 }

@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <>
       <HomeSlider />
-      {/* <SchoolFacilities /> */}
+      <SchoolFacilities />
     </>
   )
 }
