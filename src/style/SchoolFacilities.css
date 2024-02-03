@@ -12,6 +12,7 @@
 .parent1:hover .child1 {
   background-color: #FE5D37;
   color: white;
+  transition: .5s;
 }
 
 .parent1:hover .textbg1 {

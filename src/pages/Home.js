@@ -1,5 +1,7 @@
-import SchoolFacilities from "../UI/SchoolFacilities"
-import HomeSlider from "../components/Sliders/HomeSlider"
+
+
+import SchoolFacilities from "../components/UI/SchoolFacilities"
+import HomeSlider from "../components/UI/Sliders/HomeSlider"
 
 const Home = () => {
   return (
