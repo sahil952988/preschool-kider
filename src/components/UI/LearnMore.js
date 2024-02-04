@@ -7,7 +7,7 @@ import user from "../../Assets/user.jpg"
 const LearnMore = () => {
   return (
     <>
-      <div className="Lear_More 2xl:mx-[105px]  bg-white pt-20 lg:flex">
+      <div className="Lear_More 2xl:mx-[105px]  bg-white pt-20 lg:flex md:pb-[200px] pb-[100px]">
 
         <div className="Left_side px-[24px] lg:w-[50%] mt-[48px]">
           <p className='text1 md:text-[40px] text-[27px]'>Learn More About Our Work And Our Cultural Activities</p>
@@ -37,35 +37,66 @@ const LearnMore = () => {
 
             <div className="img1 bg-[#FFF5F3] hover:bg-[#FE5D37] rounded-full
              2xl:w-[459px] 2xl:h-[459px] 
-             xl-w-[450px] xl-h-[450px] 
+             xl:w-[400px] xl:h-[400px] 
              lg:w-[333px]  lg:h-[333px] 
              md:w-[522px] md:h-[522px] 
-             sm-w-[387px] sm-h-[387px]
+             sm:w-[387px] sm:h-[387px]
              w-[245px] h-[245px]">
 
               <img className='rounded-full
                2xl:w-[428px] 2xl:h-[443px]
-               xl-h-[w-400px] xl-h-[400px] 
+               xl:w-[369px] xl:h-[384px] 
                lg:w-[302px] lg:h-[317px] 
                md:w-[491px] md:h-[506px]
-               sm-w-[356px] sm-h-[371px] 
+               sm:w-[356px] sm:h-[371px] 
                w-[214px] h-[229px]  
                ml-4 pt-4 ' src={im01} alt="01" />
             </div>
 
-            {/* 
-            <div className="img2 bg-[#FFF5F3] hover:bg-[#FE5D37] w-[315px] h-[290px] rounded-full absolute mt-[-155px] ml-[-90px]">
-              <img className='w-[280px] h-[280px] rounded-full ml-4  pt-4 pb-2' src={img02} alt="" />
+
+
+            <div className="img2 absolute 2xl:mt-[310px] 2xl:ml-[-320px] xl:mt-[260px] xl:ml-[-280px] lg:mt-[190px] lg:ml-[-240px] md:mt-[370px] md:ml-[-370px] sm:mt-[240px] sm:ml-[-270px] mt-[150px] ml-[-180px] bg-[#FFF5F3] hover:bg-[#FE5D37] rounded-full
+             2xl:w-[294px] 2xl:h-[294px]
+             xl:w-[255px] xl:h-[255px]
+             lg:w-[210px] lg:h-[210px]
+             md:w-[336px] md:h-[336px]
+             sm:w-[246px] sm:h-[246px]
+             w-[151px] h-[151px] 
+             ">
+
+              <img className='rounded-full pt-4 pl-4 
+              2xl:w-[280px] 2xl:h-[280px]
+              xl:w-[241px] xl:h-[241px]
+              lg:w-[196px] lg:h-[196px]
+              md:w-[322px] md:h-[322px]
+              sm:w-[232px] sm:h-[232px]
+              w-[137px] h-[137px] 
+              ' src={img02} alt="" />
             </div>
 
-            <div className="img3 bg-[#FFF5F3] hover:bg-[#FE5D37] lg:w-[315px] lg:h-[290px] rounded-full absolute mt-[-155px] ml-[250px]">
-              <img className='lg:w-[280px] lg:h-[280px] rounded-full ml-4  pt-4 pb-2' src={img03} alt="" />
-            </div> */}
+
+            <div className="img3 absolute 2xl:mt-[310px] 2xl:ml-[320px] xl:mt-[260px] xl:ml-[280px] lg:mt-[190px] lg:ml-[240px] md:mt-[370px] md:ml-[370px] sm:mt-[240px] sm:ml-[270px] mt-[150px] ml-[180px] bg-[#FFF5F3] hover:bg-[#FE5D37] rounded-full
+             2xl:w-[294px] 2xl:h-[294px]
+             xl:w-[255px] xl:h-[255px]
+             lg:w-[210px] lg:h-[210px]
+             md:w-[336px] md:h-[336px]
+             sm:w-[246px] sm:h-[246px]
+             w-[151px] h-[151px] 
+             ">
+
+              <img className='rounded-full pt-4 pl-4 
+              2xl:w-[280px] 2xl:h-[280px]
+              xl:w-[241px] xl:h-[241px]
+              lg:w-[196px] lg:h-[196px]
+              md:w-[322px] md:h-[322px]
+              sm:w-[232px] sm:h-[232px]
+              w-[137px] h-[137px] 
+              ' src={img03} alt="" />
+            </div>
 
           </div>
 
         </div>
-
 
       </div>
     </>
