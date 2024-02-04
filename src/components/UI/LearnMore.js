@@ -4,10 +4,12 @@ import im01 from "../../Assets/learn_more_img-1.jpg"
 import img02 from "../../Assets/Learn_more_img-2.jpg"
 import img03 from "../../Assets/Learn_more_img-3.jpg"
 import user from "../../Assets/user.jpg"
+
+
 const LearnMore = () => {
   return (
     <>
-      <div className="Lear_More 2xl:mx-[105px]  bg-white pt-20 lg:flex md:pb-[200px] pb-[100px]">
+      <div className="Lear_More 2xl:mx-[105px]  bg-white pt-20 lg:flex lg:pb-[100px] pb-[100px] md:pb-[200px] ">
 
         <div className="Left_side px-[24px] lg:w-[50%] mt-[48px]">
           <p className='text1 md:text-[40px] text-[27px]'>Learn More About Our Work And Our Cultural Activities</p>
