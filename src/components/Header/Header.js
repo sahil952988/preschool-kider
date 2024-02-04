@@ -7,7 +7,7 @@ const Header = () => {
   const toggleMenu = () => menuRef.current.classList.toggle("menu__active");
   return (
     <>
-      <div className="flex justify-between bg-white xl:ml-[105px] xl:mr-[105px] lg:border-0 border-[1.5px] border-gray-400">
+      <div className="flex justify-between bg-white 2xl:mx-[105px] lg:border-0 border-[1.5px] border-gray-400">
         <div className="lg:py-4 py-3 lg:pl-12 ml-3">
           <p className="logo text-[#FE5D37] lg:text-[40px] text-[25px] font-bold space-x-2"><i class="fa-solid fa-book-open-reader"></i>  Kider</p>
         </div>

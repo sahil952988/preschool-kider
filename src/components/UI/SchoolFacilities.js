@@ -5,7 +5,7 @@ const SchoolFacilities = () => {
 
   return (
     <>
-      <div className="main xl:ml-[105px] xl:mr-[105px] bg-white">
+      <div className="main 2xl:mx-[105px] bg-white">
 
         <div className="pt-20">
           <p className='school_Facilites text-center md:text-[40px]  text-[28px] font-semibold'>School Facilities</p>

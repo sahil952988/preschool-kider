@@ -21,7 +21,7 @@ const HomeSlider = () => {
       <div className="header_top absolute h-[10px] xl:w-[1326px] w-full xl:ml-[105px] z-10 ">
       </div>
 
-      <Slider {...settings} className='xl:mr-[105px] xl:ml-[105px]'>
+      <Slider {...settings} className='2xl:mx-[105px]'>
 
         <div className="slider_01 w-fit xl:h-[742.33px] h-[500px]">
           <div className="content lg:pr-[390px] pr-20 pl-3 lg:pt-44 pt-28">
