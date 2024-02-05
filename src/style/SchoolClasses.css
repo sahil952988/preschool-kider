@@ -1,0 +1,12 @@
+.subjects {
+  font-family: 'Lobster Two', sans-serif;
+}
+
+
+.All_item {
+  transition: 0.4s;
+}
+
+.All_item:hover {
+  transform: translateY(-15px);
+}
