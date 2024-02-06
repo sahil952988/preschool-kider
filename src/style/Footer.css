@@ -1,0 +1,17 @@
+.heading {
+  font-family: 'Lobster Two', sans-serif;
+}
+
+.fa-chevron-right {
+  font-size: 12px;
+  font-weight: bolder;
+}
+
+.Quick_links:hover {
+  color: green;
+  display: block;
+  text-align: left;
+  margin-bottom: 5px;
+  text-transform: capitalize;
+  transition: .3s;
+}

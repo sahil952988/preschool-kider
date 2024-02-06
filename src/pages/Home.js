@@ -1,5 +1,3 @@
-
-
 import BecomeTeacher from "../components/UI/BecomeTeacher"
 import LearnMore from "../components/UI/LearnMore"
 import SchoolClasses from "../components/UI/SchoolClasses"
@@ -7,6 +5,9 @@ import SchoolFacilities from "../components/UI/SchoolFacilities"
 import HomeSlider from "../components/UI/Sliders/HomeSlider"
 import classData from "../Assets/ClassesData"
 import MakeAppointment from "../components/UI/MakeAppointment"
+import PopularTeachers from "../components/UI/PopularTeachers"
+import TestimonialSlider from "../components/UI/TestimonialSlider"
+
 
 const Home = () => {
   return (
@@ -26,7 +27,6 @@ const Home = () => {
         </div>
       </div>
 
-
       <div className="main 2xl:mx-[105px] bg-white">
         <section className="lg:grid lg:grid-cols-3 md:grid md:grid-cols-2 px-10  gap-5 md:space-y-0 space-y-5">
           {
@@ -40,6 +40,11 @@ const Home = () => {
       </div>
 
       <MakeAppointment />
+
+
+      <PopularTeachers />
+
+      <TestimonialSlider />
 
     </>
   )
