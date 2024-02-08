@@ -1,6 +1,18 @@
+import CommonSection from "../components/CommonSection/CommonSection"
+import BecomeTeacher from "../components/UI/BecomeTeacher"
+import LearnMore from "../components/UI/LearnMore"
+import PopularTeachers from "../components/UI/PopularTeachers"
+
 const AboutUs = () => {
   return (
-    <div>AboutUs</div>
+    <>
+      <CommonSection title='About' />
+      <LearnMore />
+      <BecomeTeacher />
+      <PopularTeachers />
+
+
+    </>
   )
 }
 export default AboutUs

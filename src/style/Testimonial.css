@@ -10,29 +10,20 @@
 
 .slick-arrow {
   background-color: #FE5D37;
-  font-size: 50px;
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
+
 
   &::before {
     background-color: #FE5D37;
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
+
   }
 }
 
 .slick-next {
   background-color: #FE5D37;
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
+
 
   &::before {
     background-color: #FE5D37;
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
+
   }
 }
