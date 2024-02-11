@@ -20,12 +20,12 @@ const PopularTeachers = () => {
 
           <div className="img01">
 
-            <div className="img_circle relative ">
+            <div className="img_circle relative parent">
               <img className='ml-5 2xl:h-[535px] xl:h-[467px] lg:h-[388px] md:h-[441px] sm:h-[677px] h-[429px] rounded-[50%]' src={teacher01} alt="" />
 
-              <div className="info_circle absolute w-[250px] h-[250px] rounded-full bg-white border-[15px] border-[#FFF5F3]  mt-[-250px] xl:ml-[180px] lg:ml-[80px] md:ml-[100px] sm:ml-[280px] ml-[100px] ">
+              <div className="info_circle child  absolute w-[250px] h-[250px] rounded-full bg-white border-[15px] border-[#FFF5F3]  mt-[-250px] xl:ml-[180px] lg:ml-[80px] md:ml-[100px] sm:ml-[280px] ml-[100px] ">
 
-                <div className="info text-center py-10">
+                <div className="info text-center py-10 bg-white rounded-full">
                   <p className='FullName text-[28px]'>Full Name</p>
                   <p className='text-[#74787C] pt-2'>Designation</p>
 
@@ -44,10 +44,10 @@ const PopularTeachers = () => {
           {/* ---------------- 2nd Image ------ */}
           <div className="img02">
 
-            <div className="img_circle relative ">
+            <div className="img_circle relative  parent">
               <img className='ml-5 2xl:h-[535px] xl:h-[467px] lg:h-[388px] md:h-[441px] sm:h-[677px] h-[429px] rounded-[50%]' src={teacher02} alt="" />
 
-              <div className="info_circle absolute w-[250px] h-[250px] rounded-full bg-white border-[15px] border-[#FFF5F3]  mt-[-250px] xl:ml-[180px] lg:ml-[80px] md:ml-[100px]  sm:ml-[280px] ml-[100px]">
+              <div className="info_circle child absolute w-[250px] h-[250px] rounded-full bg-white border-[15px] border-[#FFF5F3]  mt-[-250px] xl:ml-[180px] lg:ml-[80px] md:ml-[100px]  sm:ml-[280px] ml-[100px]">
 
                 <div className="info text-center py-10">
                   <p className='FullName text-[28px]'>Full Name</p>
@@ -68,10 +68,10 @@ const PopularTeachers = () => {
           {/* --------- 3rd image ---------- */}
 
           <div className="img03">
-            <div className="img_circle relative ">
+            <div className="img_circle relative parent ">
               <img className='ml-5 2xl:h-[535px] xl:h-[467px] lg:h-[388px] md:h-[441px] sm:h-[677px] h-[429px] rounded-[50%]' src={teacher03} alt="" />
 
-              <div className="info_circle absolute w-[250px] h-[250px] rounded-full bg-white border-[15px] border-[#FFF5F3]  mt-[-250px] 2xl:ml-[180px] xl:ml-[150px] lg:ml-[80px] md:ml-[100px]  sm:ml-[280px] ml-[100px]">
+              <div className="info_circle child absolute w-[250px] h-[250px] rounded-full bg-white border-[15px] border-[#FFF5F3]  mt-[-250px] 2xl:ml-[180px] xl:ml-[150px] lg:ml-[80px] md:ml-[100px]  sm:ml-[280px] ml-[100px]">
 
                 <div className="info text-center py-10">
                   <p className='FullName text-[28px]'>Full Name</p>

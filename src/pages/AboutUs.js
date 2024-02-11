@@ -6,7 +6,7 @@ import PopularTeachers from "../components/UI/PopularTeachers"
 const AboutUs = () => {
   return (
     <>
-      <CommonSection title='About' />
+      <CommonSection title='About Us' />
       <LearnMore />
       <BecomeTeacher />
       <PopularTeachers />

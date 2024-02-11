@@ -2,6 +2,7 @@ import React from 'react'
 import "../../../style/HomeSlider.css"
 import Slider from 'react-slick'
 
+
 const HomeSlider = () => {
   var settings = {
     dots: false,

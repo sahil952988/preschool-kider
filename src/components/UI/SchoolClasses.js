@@ -1,5 +1,4 @@
 import React from 'react'
-import Data from "../../Assets/ClassesData"
 import "../../style/SchoolClasses.css"
 import user from "../../Assets/user.jpg"
 const SchoolClasses = (props) => {

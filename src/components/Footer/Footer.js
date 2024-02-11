@@ -9,7 +9,7 @@ import "../../style/Footer.css"
 const Footer = () => {
   return (
     <>
-      <div className="FOOTER 2xl:mx-[105px] bg-[#103741]">
+      <div className="FOOTER 2xl:mx-[105px] bg-[#103741] ">
 
         <div className="items grid lg:grid-cols-4 md:grid-cols-2 gap-5 py-10  border-b-[1.5px] mx-8  border-b-white">
 

@@ -4,6 +4,8 @@ import im01 from "../../Assets/learn_more_img-1.jpg"
 import img02 from "../../Assets/Learn_more_img-2.jpg"
 import img03 from "../../Assets/Learn_more_img-3.jpg"
 import user from "../../Assets/user.jpg"
+import Aos from 'aos'
+import "aos/dist/aos.css"
 
 
 const LearnMore = () => {

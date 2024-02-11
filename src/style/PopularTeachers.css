@@ -2,3 +2,8 @@
 .FullName {
   font-family: 'Lobster Two', sans-serif;
 }
+
+.parent:hover .child {
+  border-color: #FE5D37;
+  transition: .5s;
+}
