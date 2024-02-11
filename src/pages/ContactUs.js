@@ -1,35 +1,41 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import "../style/Contact.css"
 import CommonSection from '../components/CommonSection/CommonSection'
+import Aos from 'aos'
+import "aos/dist/aos.css"
+
 const ContactUs = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1000, delay: 1 });
+  }, [])
   return (
     <>
       <CommonSection title='Contact Us' />
       <div className="main 2xl:mx-[105px] bg-white pb-20">
         <div className="pt-20 pb-10">
-          <p className='getInTouch text-center md:text-[40px]  text-[28px] font-semibold'>Get In Touch</p>
+          <p data-aos="fade-up" className='getInTouch text-center md:text-[40px]  text-[28px] font-semibold'>Get In Touch</p>
 
-          <p className='text-center xl:ml-[360px] ml-7 xl:mr-[350px] mr-7 mt-5 text-[#74787C]'>Eirmod sed ipsum dolor sit rebum labore magna erat. Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam justo sed rebum vero dolor duo.</p>
+          <p data-aos="fade-up" className='text-center xl:ml-[360px] ml-7 xl:mr-[350px] mr-7 mt-5 text-[#74787C]'>Eirmod sed ipsum dolor sit rebum labore magna erat. Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam justo sed rebum vero dolor duo.</p>
         </div>
         {/* 
 ------------ICONS --------------- */}
         <div className="contact lg:flex lg:justify-evenly  grid md:grid-cols-2  pt-16 space-y-8">
 
-          <div>
+          <div data-aos="fade-up">
             <div className="flex justify-center ">
               <h1 className='text-[#FE5D37] text-[32px] rounded-full h-[75px] w-[75px] bg-[#FFF5F3] text-center pt-3'><i class="fa-solid fa-location-dot"></i></h1></div>
 
             <p className='font-semibold mt-5 text-[20px] text-center'>123 Street, New York, USA</p>
           </div>
 
-          <div className="">
+          <div className="" data-aos="fade-up">
             <div className="flex justify-center ">
               <h1 className='text-[#FE5D37] text-[32px] rounded-full h-[75px] w-[75px] bg-[#FFF5F3] text-center pt-3'><i class="fa-regular fa-envelope-open"></i></h1>  </div>
             <p className='font-semibold mt-5 text-[20px] text-center'>info@example.com</p>
 
           </div>
 
-          <div className="">
+          <div className="" data-aos="fade-up">
             <div className="flex justify-center ">
               <h1 className='text-[#FE5D37] text-[32px] rounded-full h-[75px] w-[75px] bg-[#FFF5F3] text-center pt-3'><i class="fa-solid fa-phone"></i></h1>  </div>
             <p className='font-semibold mt-5 text-[20px] text-center'>+012 345 6789</p>

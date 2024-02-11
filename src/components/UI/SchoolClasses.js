@@ -1,9 +1,16 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import "../../style/SchoolClasses.css"
 import user from "../../Assets/user.jpg"
+import Aos from 'aos'
+import "aos/dist/aos.css"
+
 const SchoolClasses = (props) => {
   const { imgUrl
     , subject, Fee, Age, Time, Capacity } = props.item;
+
+  useEffect(() => {
+    Aos.init({ delay: 1, duration: 1200 });
+  }, [])
   return (
     <>
       <div className="All_item ">

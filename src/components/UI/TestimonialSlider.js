@@ -1,11 +1,17 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Slider from 'react-slick'
 import user1 from "../../Assets/testimonial-1.jpg"
 import user2 from "../../Assets/testimonial-2.jpg"
 import user3 from "../../Assets/testimonial-3.jpg"
 import "../../style/Testimonial.css"
+import Aos from 'aos'
+import "aos/dist/aos.css"
 
 const TestimonialSlider = () => {
+
+  useEffect(() => {
+    Aos.init({ duration: 1000, delay: 1 });
+  }, [])
 
   const settings = {
     dots: false,
@@ -39,15 +45,15 @@ const TestimonialSlider = () => {
     <>
       <div className="main 2xl:mx-[105px] bg-white">
         <div className="pt-20 pb-10 ">
-          <p className='Popular_Teachers text-center md:text-[40px]  text-[28px] font-semibold'>Our Clients Say!</p>
+          <p data-aos="fade-up" className='Popular_Teachers text-center md:text-[40px]  text-[28px] font-semibold'>Our Clients Say!</p>
 
-          <p className='text-center xl:ml-[360px] ml-7 xl:mr-[350px] mr-7 mt-5 text-[#74787C]'>Eirmod sed ipsum dolor sit rebum labore magna erat. Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam justo sed rebum vero dolor duo.</p>
+          <p data-aos="fade-up" className='text-center xl:ml-[360px] ml-7 xl:mr-[350px] mr-7 mt-5 text-[#74787C]'>Eirmod sed ipsum dolor sit rebum labore magna erat. Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam justo sed rebum vero dolor duo.</p>
         </div>
 
         {/* ------------- Slider -------------- */}
 
-        <Slider {...settings} className='mx-10  pb-12'>
-          <div className="slider01  bg-[#FFF5F3] rounded-[10px]">
+        <Slider  {...settings} className='mx-10  pb-12'>
+          <div data-aos="fade-up" className="slider01  bg-[#FFF5F3] rounded-[10px]">
             <p className='text-[#74787C] text-[20px] pt-10 px-10 '>Tempor stet labore dolor clita stet diam amet ipsum dolor duo ipsum rebum stet dolor amet diam stet. Est stet ea lorem amet est kasd kasd erat eos</p>
 
             <div className="flex rounded-l-[50px] bg-white mb-10 ml-10 mt-5">
@@ -62,7 +68,7 @@ const TestimonialSlider = () => {
             </div>
           </div>
 
-          <div className="slider02  rounded-[10px] bg-[#FFF5F3] ">
+          <div data-aos="fade-up" className="slider02  rounded-[10px] bg-[#FFF5F3] ">
             <p className='text-[#74787C] text-[20px] pt-10 px-10 '>Tempor stet labore dolor clita stet diam amet ipsum dolor duo ipsum rebum stet dolor amet diam stet. Est stet ea lorem amet est kasd kasd erat eos</p>
 
             <div className="flex rounded-l-[50px] bg-white mb-10 ml-10 mt-5">
@@ -78,7 +84,7 @@ const TestimonialSlider = () => {
           </div>
 
 
-          <div className="slider03 rounded-[10px] bg-[#FFF5F3] ">
+          <div data-aos="fade-up" className="slider03 rounded-[10px] bg-[#FFF5F3] ">
             <p className='text-[#74787C] text-[20px] pt-10 px-10 '>Tempor stet labore dolor clita stet diam amet ipsum dolor duo ipsum rebum stet dolor amet diam stet. Est stet ea lorem amet est kasd kasd erat eos</p>
 
             <div className="flex rounded-l-[50px] bg-white mb-10 ml-10 mt-5">

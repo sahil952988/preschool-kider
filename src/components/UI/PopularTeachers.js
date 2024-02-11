@@ -1,16 +1,22 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import "../../style/PopularTeachers.css"
 import teacher01 from "../../Assets/PopularTeacher01.jpg"
 import teacher02 from "../../Assets/PopularTeacher02.jpg"
 import teacher03 from "../../Assets/PopularTeacher03.jpg"
+import Aos from 'aos'
+import "aos/dist/aos.css"
+
 const PopularTeachers = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1200, delay: 1 });
+  }, [])
   return (
     <>
       <div className="main 2xl:mx-[105px] bg-white">
         <div className="pt-20 pb-10">
-          <p className='Popular_Teachers text-center md:text-[40px]  text-[28px] font-semibold'>Popular Teachers</p>
+          <p data-aos="fade-up" className='Popular_Teachers text-center md:text-[40px]  text-[28px] font-semibold'>Popular Teachers</p>
 
-          <p className='text-center xl:ml-[360px] ml-7 xl:mr-[350px] mr-7 mt-5 text-[#74787C]'>Eirmod sed ipsum dolor sit rebum labore magna erat. Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam justo sed rebum vero dolor duo.</p>
+          <p data-aos="fade-up" className='text-center xl:ml-[360px] ml-7 xl:mr-[350px] mr-7 mt-5 text-[#74787C]'>Eirmod sed ipsum dolor sit rebum labore magna erat. Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam justo sed rebum vero dolor duo.</p>
         </div>
 
         {/* ---------- TEACHERS ------------------ */}
@@ -18,7 +24,7 @@ const PopularTeachers = () => {
         <div class="images grid lg:grid-cols-3 md:grid-cols-2 gap-4 pb-10">
 
 
-          <div className="img01">
+          <div data-aos="fade-up" className="img01">
 
             <div className="img_circle relative parent">
               <img className='ml-5 2xl:h-[535px] xl:h-[467px] lg:h-[388px] md:h-[441px] sm:h-[677px] h-[429px] rounded-[50%]' src={teacher01} alt="" />
@@ -42,7 +48,7 @@ const PopularTeachers = () => {
 
 
           {/* ---------------- 2nd Image ------ */}
-          <div className="img02">
+          <div data-aos="fade-up" className="img02">
 
             <div className="img_circle relative  parent">
               <img className='ml-5 2xl:h-[535px] xl:h-[467px] lg:h-[388px] md:h-[441px] sm:h-[677px] h-[429px] rounded-[50%]' src={teacher02} alt="" />
@@ -67,7 +73,7 @@ const PopularTeachers = () => {
 
           {/* --------- 3rd image ---------- */}
 
-          <div className="img03">
+          <div data-aos="fade-up" className="img03">
             <div className="img_circle relative parent ">
               <img className='ml-5 2xl:h-[535px] xl:h-[467px] lg:h-[388px] md:h-[441px] sm:h-[677px] h-[429px] rounded-[50%]' src={teacher03} alt="" />
 

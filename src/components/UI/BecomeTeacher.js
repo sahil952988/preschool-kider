@@ -1,15 +1,20 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import "../../style/BecomeTeacher.css"
 import become_teacherimg from "../../Assets/BecomeTeacher.jpg"
+import Aos from 'aos'
+import "aos/dist/aos.css"
 
 const BecomeTeacher = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1200, delay: 1 });
+  }, [])
   return (
     <>
       <div className="main 2xl:mx-[105px] bg-white lg:flex">
 
 
         <div className="left_side pl-8 lg:pr-0 pr-8 ">
-          <img className='rounded-[8px] lg:w-[636px] w-[100%] h-[400px] object-cover' src={become_teacherimg} alt="teacherimg" />
+          <img data-aos="zoom-in" className='rounded-[8px] lg:w-[636px] w-[100%] h-[400px] object-cover' src={become_teacherimg} alt="teacherimg" />
         </div>
 
         <div className="right_side lg:w-[50%]  lg:pr-24  pr-8 pl-12 bg-[#FFF5F3] mr-8  lg:ml-0 ml-8 rounded-[8px]">

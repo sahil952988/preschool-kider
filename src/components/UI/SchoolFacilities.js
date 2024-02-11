@@ -1,23 +1,28 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import "../../style/SchoolFacilities.css"
+import Aos from 'aos'
+import "aos/dist/aos.css"
 const SchoolFacilities = () => {
 
+  useEffect(() => {
+    Aos.init({ duration: 1000, delay: 1 });
+  }, [])
 
   return (
     <>
       <div className="main 2xl:mx-[105px] bg-white">
 
-        <div className="pt-20">
-          <p className='school_Facilites text-center md:text-[40px]  text-[28px] font-semibold'>School Facilities</p>
+        <div className="pt-20" >
+          <p data-aos="fade-up" className='school_Facilites text-center md:text-[40px]  text-[28px] font-semibold'>School Facilities</p>
 
-          <p className='text-center xl:ml-[360px] ml-7 xl:mr-[350px] mr-7 mt-5 text-[#74787C]'>Eirmod sed ipsum dolor sit rebum labore magna erat. Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam justo sed rebum vero dolor duo.</p>
+          <p data-aos="fade-up" className='text-center xl:ml-[360px] ml-7 xl:mr-[350px] mr-7 mt-5 text-[#74787C]'>Eirmod sed ipsum dolor sit rebum labore magna erat. Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam justo sed rebum vero dolor duo.</p>
         </div>
 
 
         {/* ====================1 =================== */}
 
         <div className="main sm:grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-10 lg:space-y-0 space-y-5">
-          <div className="parent1">
+          <div className="parent1" data-aos="fade-up">
 
             <div className="ear_head flex justify-center ">
               <div className="ear flex justify-center space-x-12">
@@ -44,7 +49,7 @@ const SchoolFacilities = () => {
 
           {/* 
        ===================2 ================= */}
-          <div className="parent2">
+          <div className="parent2" data-aos="fade-up">
 
             <div className="ear_head flex justify-center ">
               <div className="earx-12 flex absolute space-x-12 ">
@@ -71,7 +76,7 @@ const SchoolFacilities = () => {
           {/* ===============3====================== */}
 
 
-          <div className="parent3">
+          <div className="parent3" data-aos="fade-up">
 
             <div className="ear_head flex justify-center ">
               <div className="earx-12 flex absolute space-x-12">
@@ -97,7 +102,7 @@ const SchoolFacilities = () => {
           {/* =============== 4 ======================= */}
 
 
-          <div className="parent4">
+          <div className="parent4" data-aos="fade-up">
 
             <div className="ear_head flex justify-center ">
               <div className="earx-12 flex absolute space-x-12">
