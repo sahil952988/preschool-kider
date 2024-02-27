@@ -1,0 +1,11 @@
+.fa-arrow-up {
+  font-size: 25px;
+}
+
+.go_up {
+  position: fixed;
+  bottom: 40px;
+  right: 30px;
+  z-index: 9999;
+  color: white;
+}

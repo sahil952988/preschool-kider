@@ -9,8 +9,11 @@ const CommonSection = ({ title }) => {
         <div className="title  text-white md:text-[40px] text-[27px]">
           <h1>{title}</h1>
         </div>
+        <h1 className='text-[#cb4a2c] text-[19px] 2xl:mx-[50px]'>Home <span className='text-[#74787C]'>/</span> Pages <span className='text-[#74787C]'>/</span><span className='text-white'> {title}</span></h1>
+
       </section>
       <div className="header_bottom absolute h-[19px] 2xl:w-[1500px]  xl-[1280px] w-full 2xl:ml-[105px] z-10 mt-[-18px] ">
+
       </div>
     </>
   )
