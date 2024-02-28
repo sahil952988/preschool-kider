@@ -18,7 +18,6 @@ const Header = () => {
             <Link to="/Home"> <p className='hover:text-[#FE5D37] focus:text-[#FE5D37]'>Home</p></Link>
             <Link to="/AboutUs"><p className='hover:text-[#FE5D37]   '>About Us</p></Link>
             <Link to="/Classes"><p className='hover:text-[#FE5D37]'>Classes</p></Link>
-            <Link><p className='hover:text-[#FE5D37]'>Pages</p></Link>
             <Link to="/ContactUs"><p className='hover:text-[#FE5D37]'>Contact Us</p></Link>
           </div>
         </div>
