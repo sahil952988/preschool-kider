@@ -25,12 +25,12 @@ const HomeSlider = () => {
   };
   return (
     <>
-      <div className="header_top absolute h-[10px] 2xl:w-[1487px] xl:w-[1280px] 2xl:ml-[105px] z-10 ">
+      <div className="header_top absolute h-[10px] 2xl:w-[1487px] xl:w-[1280px] lg:w-[1000px] md:w-[768px] sm:w-[640px] w-[375px] 2xl:ml-[105px] z-10 ">
       </div>
 
       <Slider {...settings} className='2xl:mx-[105px]'>
 
-        <div className="slider_01 w-fit xl:h-[742.33px] h-[500px]">
+        <div className="slider_01 w-fit xl:h-[742.33px] lg:h-[742.33px] h-[500px]">
           <div className="content lg:pr-[390px] pr-20 pl-3 lg:pt-44 pt-28">
             <p data-aos="fade-down" className='text-1 font-semibold lg:text-[72px] text-[30px]'>The Best Kindergarden School For Your Child</p>
             <p className='lg:text-[20px] text-white'>Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea elitr.</p>
@@ -42,7 +42,8 @@ const HomeSlider = () => {
           </div>
         </div>
 
-        <div className="slider_02 w-fit xl:h-[742.33px] h-[500px]">
+
+        <div className="slider_02 w-fit xl:h-[742.33px] lg:h-[742.33px] h-[500px]">
           <div className="content lg:pr-[390px] pr-20 pl-3 lg:pt-44 pt-28">
             <p data-aos="fade-down" className='text-1 font-semibold lg:text-[72px] text-[30px]'>Make A Brighter Future Of Your Child</p>
             <p className='lg:text-[20px] text-white'>Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea elitr.</p>
@@ -55,7 +56,7 @@ const HomeSlider = () => {
         </div>
       </Slider>
 
-      <div className="header_bottom absolute h-[19px] 2xl:w-[1487px]  xl-[1280px] 2xl:ml-[105px] z-10 mt-[-18px] ">
+      <div className="header_bottom absolute h-[19px] 2xl:w-[1487px] xl:w-[1280px] lg:w-[1000px] md:w-[768px] sm:w-[640px] w-[375px] 2xl:ml-[105px] z-10 mt-[-18px] ">
       </div>
     </>
   )
