@@ -55,7 +55,7 @@ const HomeSlider = () => {
         </div>
       </Slider>
 
-      <div className="header_bottom absolute h-[19px] 2xl:w-[1487px]  xl-[1280px]  2xl:ml-[105px] z-10 mt-[-18px] ">
+      <div className="header_bottom absolute h-[19px] 2xl:w-[1487px]  xl-[1280px] 2xl:ml-[105px] z-10 mt-[-18px] ">
       </div>
     </>
   )
