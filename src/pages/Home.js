@@ -10,6 +10,7 @@ import TestimonialSlider from "../components/UI/TestimonialSlider"
 import { useEffect } from "react"
 import Aos from 'aos'
 import "aos/dist/aos.css"
+import Teacher from "../components/Teacher"
 
 
 const Home = () => {
@@ -34,15 +35,25 @@ const Home = () => {
       </div>
 
       <div data-aos="fade-up" className="main 2xl:mx-[105px] bg-white">
+
         <section data-aos="fade-up" className="lg:grid lg:grid-cols-3 md:grid md:grid-cols-2 px-10  gap-5 md:space-y-0 space-y-5">
-          {
-            classData.map((item) => {
-              return (
-                <SchoolClasses item={item} />
-              )
-            })
-          }
+          {classData && classData.map(detail => (
+            <div>
+              {/* class ko main photo */}
+              <img src={`${detail.photo}`} alt="" className="h-[200px] w-[200px]" />
+              <h1>{detail.age}</h1>
+              <p>{detail.capacity}</p>
+              <p>{detail.classname}</p>
+              <p>{detail.fee}</p>
+              <p>{detail.time}</p>
+              <Teacher teacher={detail.teacher} />
+
+            </div>
+
+          ))}
         </section>
+
+
       </div>
 
       <MakeAppointment />
