@@ -14,14 +14,11 @@ const Teacher = ({ teacher }) => {
     <div>
       {data &&
         <div>
+          <img src={`${baseUrl}${data.photo}`} alt="" className='h-[45px] w-[45px] rounded-[50%]' />
           <p>{data.fullname}</p>
-          <h1>{data.designation}</h1>
-          <img src={`${baseUrl}${data.photo}`} alt="" className='h-[50px] w-[50px]' />
-
+          <h1>{data.profession}</h1>
         </div>
       }
-
-
     </div>
   )
 }
