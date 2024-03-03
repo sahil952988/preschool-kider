@@ -13,10 +13,12 @@ const Teacher = ({ teacher }) => {
   return (
     <div>
       {data &&
-        <div>
+        <div className='flex space-x-6'>
           <img src={`${baseUrl}${data.photo}`} alt="" className='h-[45px] w-[45px] rounded-[50%]' />
-          <p>{data.fullname}</p>
-          <h1>{data.profession}</h1>
+          <div className="detail">
+            <p className='text-[18px]'>{data.fullname}</p>
+            <h1 className='text-[#74787C] text-[13px]'>{data.profession}</h1>
+          </div>
         </div>
       }
     </div>

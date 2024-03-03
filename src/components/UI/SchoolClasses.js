@@ -33,8 +33,6 @@ const SchoolClasses = () => {
 
                   <div className="detials ">
                     <p className='text-[#FE5D37] font-bold'><Teacher teacher={detail.teacher} /></p>
-                    <p className='text-[#74787C] text-[14px]'>
-                      <Teacher teacher={detail.profession} /></p>
                   </div>
                 </div>
 
