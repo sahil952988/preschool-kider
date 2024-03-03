@@ -9,7 +9,7 @@ export const ClassApi = createApi({
 
     getClasses: builder.query({
       query: (query) => ({
-        url: '/api/classes',
+        url: '/api/class',
       }),
       providesTags: ['classes']
     }),

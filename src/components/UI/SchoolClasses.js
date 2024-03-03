@@ -4,6 +4,7 @@ import Aos from 'aos'
 import "aos/dist/aos.css"
 import { useGetClassesQuery } from '../../Features/ClassApi'
 import Teacher from '../Teacher'
+import { baseUrl } from '../../Features/Constant'
 
 const SchoolClasses = () => {
   const { data: classData } = useGetClassesQuery();
@@ -19,7 +20,7 @@ const SchoolClasses = () => {
             {/* class ko main photo */}
             <div className="flex justify-center">
               <div className="IMAGE w-[273px] bg-[#FFF5F3]  h-[273px] rounded-full ">
-                <img src={`${detail.photo}`} alt="" className='rounded-full pl-4 pt-3 w-[259px] h-[259px]' />
+                <img src={`${baseUrl}${detail.photo}`} alt="" className='rounded-full pl-4 pt-3 w-[259px] h-[259px]' />
               </div>
             </div>
 
