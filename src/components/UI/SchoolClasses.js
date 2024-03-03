@@ -16,8 +16,8 @@ const SchoolClasses = () => {
     <>
       <div data-aos="fade-up" className="All_item  2xl:mx-[105px] bg-white lg:grid lg:grid-cols-3 md:grid md:grid-cols-2 px-10  gap-5 md:space-y-0 space-y-5">
         {classData && classData.map(detail => (
-          <div>
-            {/* class ko main photo */}
+          <div className='All_item'>
+
             <div className="flex justify-center">
               <div className="IMAGE w-[273px] bg-[#FFF5F3]  h-[273px] rounded-full ">
                 <img src={`${baseUrl}${detail.photo}`} alt="" className='rounded-full pl-4 pt-3 w-[259px] h-[259px]' />

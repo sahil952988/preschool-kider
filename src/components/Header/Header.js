@@ -1,7 +1,20 @@
-import React, { useRef } from 'react'
+import React, { useRef, useState } from 'react'
 import "../../style/Header.css"
 import { Link } from 'react-router-dom';
 const Header = () => {
+
+  const [isHovering, setIsHovering] = useState(false);
+
+  const handleMouseOver = () => {
+    setIsHovering(true);
+  };
+
+  const handleMouseOut = () => {
+    setIsHovering(false);
+  };
+
+
+
   const menuRef = useRef(null);
 
   const toggleMenu = () => menuRef.current.classList.toggle("menu__active");
@@ -18,7 +31,31 @@ const Header = () => {
             <Link to="/Home"> <p className='hover:text-[#FE5D37] focus:text-[#FE5D37]'>Home</p></Link>
             <Link to="/AboutUs"><p className='hover:text-[#FE5D37]   '>About Us</p></Link>
             <Link to="/Classes"><p className='hover:text-[#FE5D37]'>Classes</p></Link>
-            <p className='hover:text-[#FE5D37]'>Pages <i class="fa-solid fa-chevron-down"></i></p>
+
+
+            <div>
+              <div>
+                <div
+                  onMouseOver={handleMouseOver}
+                  onMouseOut={handleMouseOut}
+                >
+                  <p className='hover:text-[#FE5D37]'>Pages <span><i class="fa-solid fa-chevron-down"></i></span></p>
+                </div>
+
+                {isHovering && (
+                  <div className='lg:absolute lg:z-[99999] lg:bg-white rounded-[5px] text-gray-700 text-[18px] px-5 py-4 space-y-2 '>
+                    <h2>School Facilities</h2>
+                    <h2>Popular Teachers</h2>
+                    <h2>Become A Teachers</h2>
+                    <h2>Make Appointment</h2>
+                    <h2>Testimonial</h2>
+                    <h2>404 Error</h2>
+                  </div>
+                )}
+              </div>
+            </div>
+
+
             <Link to="/ContactUs"><p className='hover:text-[#FE5D37]'>Contact Us</p></Link>
 
           </div>
@@ -41,7 +78,31 @@ const Header = () => {
           <Link to="/Home"> <p className='hover:text-[#FE5D37]'>Home</p></Link>
           <Link to="/AboutUs"><p className='hover:text-[#FE5D37]'>About Us</p></Link>
           <Link to="/Classes"><p className='hover:text-[#FE5D37]'>Classes</p></Link>
-          <Link><p className='hover:text-[#FE5D37]'>Pages</p></Link>
+
+
+          <div>
+            <div>
+              <div
+                onMouseOver={handleMouseOver}
+                onMouseOut={handleMouseOut}
+              >
+                <p className='hover:text-[#FE5D37]'>Pages <span><i class="fa-solid fa-chevron-down"></i></span></p>
+              </div>
+
+              {isHovering && (
+                <div className='shadow-xl mr-5 bg-white rounded-[5px] text-gray-700 text-[18px] px-5 py-4 space-y-2 '>
+                  <h2>School Facilities</h2>
+                  <h2>Popular Teachers</h2>
+                  <h2>Become A Teachers</h2>
+                  <h2>Make Appointment</h2>
+                  <h2>Testimonial</h2>
+                  <h2>404 Error</h2>
+                </div>
+              )}
+            </div>
+          </div>
+
+
           <Link to="/ContactUs"><p className='hover:text-[#FE5D37]'>Contact Us</p></Link>
         </div>
       </div>

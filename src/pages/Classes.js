@@ -18,17 +18,7 @@ const Classes = () => {
         </div>
       </div>
 
-      <div className="main 2xl:mx-[105px] bg-white">
-        <section className="lg:grid lg:grid-cols-3 md:grid md:grid-cols-2 px-10  gap-5 md:space-y-0 space-y-5">
-          {
-            classData.map((item) => {
-              return (
-                <SchoolClasses item={item} />
-              )
-            })
-          }
-        </section>
-      </div>
+      <SchoolClasses />
 
 
       <MakeAppointment />
