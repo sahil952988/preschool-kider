@@ -12,6 +12,9 @@ import "aos/dist/aos.css"
 
 
 
+
+
+
 const Home = () => {
 
 
@@ -45,6 +48,8 @@ const Home = () => {
       <PopularTeachers />
 
       <TestimonialSlider />
+
+
 
     </>
   )
