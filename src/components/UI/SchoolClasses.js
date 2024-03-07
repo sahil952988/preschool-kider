@@ -12,6 +12,7 @@ const SchoolClasses = () => {
   useEffect(() => {
     Aos.init({ delay: 1, duration: 1200 });
   }, [])
+
   return (
     <>
       <div data-aos="fade-up" className="All_item  2xl:mx-[105px] bg-white lg:grid lg:grid-cols-3 md:grid md:grid-cols-2 px-10  gap-5 md:space-y-0 space-y-5">

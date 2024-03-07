@@ -1,22 +1,12 @@
 import CommonSection from "../components/CommonSection/CommonSection"
-import classData from "../Assets/ClassesData"
+import Search from "../components/Search"
 import MakeAppointment from "../components/UI/MakeAppointment"
-
 import TestimonialSlider from "../components/UI/TestimonialSlider"
-import { useState } from "react"
-import { SearchResultsList } from "../components/SearchTeachers/SearchResultsList"
-import SearchBar from "../components/SearchTeachers/SearchBar"
+
 
 
 
 const Classes = () => {
-  const [results, setResults] = useState([]);
-
-
-
-
-
-
 
   return (
     <>
@@ -31,22 +21,7 @@ const Classes = () => {
         </div>
       </div>
 
-
-
-      <div className="App">
-        <div className="search-bar-container">
-          <SearchBar setResults={setResults} />
-          {results && results.length > 0 && <SearchResultsList results={results} />}
-        </div>
-      </div>
-
-
-
-
-
-
-
-
+      <Search />
 
       <MakeAppointment />
 

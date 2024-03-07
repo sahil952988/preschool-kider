@@ -9,6 +9,7 @@ import TestimonialSlider from "../components/UI/TestimonialSlider"
 import { useEffect } from "react"
 import Aos from 'aos'
 import "aos/dist/aos.css"
+import Paginations from "../components/Paginations"
 
 
 
@@ -37,9 +38,15 @@ const Home = () => {
           <p data-aos="fade-up" className='text-center xl:ml-[360px] ml-7 xl:mr-[350px] mr-7 mt-5 text-[#74787C]'>Eirmod sed ipsum dolor sit rebum labore magna erat. Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam justo sed rebum vero dolor duo.</p>
         </div>
       </div>
-
-      <SchoolClasses />
+      {/* 
+      <SchoolClasses /> */}
       {/* ------------------------------ */}
+
+      <section>
+        <Paginations />
+      </section>
+
+
 
 
       <MakeAppointment />
