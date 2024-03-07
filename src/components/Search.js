@@ -7,7 +7,7 @@ function Search() {
   const [searchTerm, setSearchTerm] = useState("");
   return (
     <>
-      <div className="main 2xl:mx-[105px] ">
+      <div className="main ">
         <div className="">
           <p data-aos="fade-up" className='school_Facilites text-center md:text-[40px]  text-[28px] font-semibold'>Find Your Teacher</p>
         </div>
@@ -21,7 +21,7 @@ function Search() {
         </div>
 
 
-        <div className="template_Container px-[105px] ml-[105px]  grid grid-cols-3 gap-4 ">
+        <div className="template_Container 2xl:mx-[105px] bg-white lg:grid lg:grid-cols-3 md:grid md:grid-cols-2 px-10  gap-5 md:space-y-0 space-y-5">
           {
             data
               .filter((val) => {

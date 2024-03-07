@@ -15,11 +15,6 @@
   outline: none;
 }
 
-.templateContainer .template_Container {
-  display: grid;
-
-  margin: 0 auto;
-}
 
 .templateContainer .template_Container .template {
   background-color: white;

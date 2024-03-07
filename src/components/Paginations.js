@@ -14,8 +14,8 @@ function Paginations() {
     .slice(pagesVisited, pagesVisited + usersPerPage)
     .map((user) => {
       return (
-        <div className="hero 2xl:mx-[105px] bg-white flex md:space-y-0 space-y-5 pb-10">
-          <div className='All_item '>
+        <div className="hero">
+          <div className='All_item  bg-white'>
 
             <div className="flex justify-center">
               <div className="IMAGE w-[273px] bg-[#FFF5F3]  h-[273px] rounded-full ">
@@ -71,7 +71,7 @@ function Paginations() {
   };
 
   return (
-    <div className="App bg-white grid grid-cols-3 gap-4 mx-[105px]">
+    <div className="App 2xl:mx-[105px] bg-white lg:grid lg:grid-cols-3 md:grid md:grid-cols-2 px-10  gap-5 md:space-y-0 space-y-5 ">
       {displayUsers}
       <ReactPaginate
         previousLabel={"Previous"}
